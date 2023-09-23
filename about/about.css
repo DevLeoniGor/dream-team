@@ -1,0 +1,77 @@
+#logo {
+    max-height: 100%;
+}
+
+nav {
+    display: flex;
+    order: -1;
+}
+
+nav .navbar {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .nav-item {
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px;
+    border-radius: 35px;
+    transition: all 0.5s ease-in-out;
+    font-weight: 600;
+}
+.nav-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    background: brown; 
+}
+.nav-item:hover a{
+    color: white;
+}
+
+
+.our-notes {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.note {
+    width: 60%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 10px 75px;
+}
+
+.note p{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.note:nth-child(odd) p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(37, 83, 84);
+}
+.note:nth-child(even) p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+}
+
+.note:nth-child(odd) {
+    border: 3px dotted black;
+    align-self: flex-start;
+}
+
+.note:nth-child(even) {
+    border: 5px double red;
+    align-self: flex-end;
+}
