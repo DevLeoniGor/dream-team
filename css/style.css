@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: cadetblue;
+    height: 60px;
+
+    /*added*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    box-sizing: border-box;
+
+    /*added*/
+    position: fixed;
+    right: 0;
+    width: 100%;
+}
+
+#logo {
+    max-height: 100%;
+}
+
+nav {
+    display: flex;
+    order: -1;
+}
+
+nav .navbar {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .nav-item {
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px;
+    border-radius: 35px;
+    transition: all 0.5s ease-in-out;
+    font-weight: 600;
+}
+.nav-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    background: brown;
+}
+.nav-item:hover a{
+    color: white;
+}
+
+main {
+    flex-grow: 1;
+    /*added*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 60px; /*то же количество пикселей, что и высота header*/
+}
+#block-1 {
+    flex-grow: 1;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,1) 65%), url(../images/621-2000x1000.jpg);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#block-1 h1 {
+    position: absolute;
+    left: 100px;
+    top: 140px;
+    display: inline;
+    font-size: 3em;
+    border-bottom: dotted 1px #2b484d;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+}
+
+#content div:nth-child(1) {
+    flex-basis: 20%;
+    flex-shrink: 0;
+    padding: 300px 10px 40px 20px;
+    text-align: justify;
+}
+
+#content div:nth-child(2) {
+    flex-grow: 1;
+    padding: 300px 10px 40px 10px;
+    text-align: justify;
+}
+
+#content div:nth-child(3) {
+    flex-basis: 20%;
+    flex-shrink: 0;
+    padding: 300px 20px 40px 10px;
+    text-align: justify;
+}
+
+#block-2 h2 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#block-2 p {
+    margin: 10px 40px;
+    text-align: justify;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: brown;
+    color: wheat;
+    height: 65px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
