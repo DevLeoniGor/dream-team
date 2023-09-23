@@ -8,11 +8,30 @@ body {
 header {
     background-color: cadetblue;
     height: 60px;
+
+    /*added*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    /*added*/
+    position: fixed;
+    right: 0;
+    width: 100%;
 }
 
-section {
+main {
     flex-grow: 1;
     background-color: moccasin;
+
+    /*added*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 60px; /*то же количество пикселей, что и высота header*/
 }
 
 footer {
@@ -21,6 +40,10 @@ footer {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    background-color: #86ec86;
+    background-color: brown;
+    color: wheat;
     height: 65px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
 }
