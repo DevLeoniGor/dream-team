@@ -1,3 +1,8 @@
+main {
+    background-image: url(../images/design-space-paper-textured-background.jpg);
+    background-size: 100% 100%;
+}
+
 .our-notes {
     display: flex;
     flex-direction: column;
